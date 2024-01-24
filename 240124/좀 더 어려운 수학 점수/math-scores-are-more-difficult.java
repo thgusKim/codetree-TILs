@@ -8,18 +8,10 @@ public class Main {
         int bMath = sc.nextInt();
         int bEng = sc.nextInt();
 
-        if(aMath==bMath){
-            if(aEng > bEng){
-                System.out.println("A");
-            }else{
-                System.out.println("B");
-            }
+        if((aMath > bMath) || (aMath==bMath && aEng > bEng)){
+            System.out.println("A");
         }else{
-            if(aMath > bMath){
-                System.out.println("A");
-            }else{
-                System.out.println("B");
-            }
+            System.out.println("B");
         }
     }
 }
