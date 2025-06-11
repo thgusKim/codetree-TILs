@@ -9,14 +9,14 @@ public class Main{
         for(int i=0; i<10; i++){
             arr[i] = sc.nextInt();
             if(arr[i] >= 250) {
-                System.out.print(sum+" "+(float)sum/i);
+                System.out.printf("%d %.1f", sum, (float)sum/i);
                 break;
             }else{
                 sum += arr[i]; 
             }
 
             if(i==9) {
-                System.out.print(sum+" "+(float)sum/10);
+                System.out.printf("%d %.1f", sum, (float)sum/10);
                 break;
             }
         }
