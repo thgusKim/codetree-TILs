@@ -8,12 +8,13 @@ public class Main{
 
         for(int i=0; i<10; i++){
             arr[i] = sc.nextInt();
-            if(arr[i] >= 250) {
+            if(arr[i] >= 250 || i==9) {
                 System.out.print(sum+" "+(float)sum/i);
                 break;
             }else{
                 sum += arr[i]; 
             }
+
         }
     }
 }
