@@ -22,12 +22,13 @@ public class Main{
         for(int i=0; i<n1; i++){
             if(arrA[i] == arrB[0]){
                 cnt = i;
+                break;
             }
         }
 
-        for(int i=cnt; i<n2; i++){
-            if(arrA[i+1] != arrB[cnt-i+1]){
-                // System.out.print(i+"  "+arrA[i+1] + "   " +arrB[i-cnt+1]);
+        for(int i=0; i<n2; i++){
+            if(arrA[cnt+i] != arrB[i]){
+                // System.out.print(i+"  "+ arrA[cnt+i+1] + "   " + arrB[i]);
                 satisfied = false;
                 break;
             }
