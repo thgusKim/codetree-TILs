@@ -21,7 +21,7 @@ public class Main{
 
             }else if(cases == 2){
                 int idx = -1;
-                for(int j=0; i<n; j++){
+                for(int j=0; j<n; j++){
                     if(arr[j] == num1){
                         idx = j+1;
                         break;
