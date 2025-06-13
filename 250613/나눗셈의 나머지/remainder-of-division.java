@@ -11,7 +11,7 @@ public class Main{
         int temp = 0;
 
         for(int i=0; i<500; i++){
-            if(a == 0) break;
+            if(a == 0 || a==1) break;
             temp = a/b;
             countArr[a % b]++;
             a = temp;
