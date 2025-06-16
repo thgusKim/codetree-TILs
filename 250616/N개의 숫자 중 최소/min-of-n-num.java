@@ -6,14 +6,15 @@ public class Main{
 
         int n = sc.nextInt();
         int[] arr = new int[n];
-        int min = sc.nextInt();
-        int cnt = 0;
 
-        for(int i=1; i<n; i++){
+        for(int i=0; i<n; i++){
             arr[i] = sc.nextInt();
         }
 
-        for(int i=1; i<n; i++){
+        int min = arr[0];
+        int cnt = 0;
+
+        for(int i=0; i<n; i++){
             if(arr[i] < min){
                 min = arr[i];
             }
@@ -21,6 +22,7 @@ public class Main{
 
         for(int i=0; i<n; i++){
             if(arr[i] == min){
+                System.out.println(i);
                 cnt++;
             }
         }
