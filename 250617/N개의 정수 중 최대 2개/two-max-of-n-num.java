@@ -7,22 +7,19 @@ public class Main{
         int n = sc.nextInt();
         int[] arr = new int[n];
         arr[0] = sc.nextInt();
-        arr[1] = sc.nextInt();
-
-        if(arr[1] > arr[0]){
-            arr[2] = arr[0];
-            arr[0] = arr[1];
-            arr[1] = arr[2];
-        }
-
-        for(int i=2; i<n; i++){
+        int temp = 0;
+        
+        for(int i=1; i<n; i++){
             arr[i] = sc.nextInt();
 
-            if(arr[0] < arr[i]){
-                arr[1] = arr[0];
-                arr[0] = arr[i];
-            }else if(arr[1] < arr[i]){
-                arr[1] = arr[i];
+            for(int j=i-1; j>=0; j--){
+                if(arr[j+1] < arr[j]){
+                    break;
+                }else{
+                    temp = arr[j+1];
+                    arr[j+1] = arr[j];
+                    arr[j] = temp;
+                }
             }
         }
 
