@@ -6,13 +6,11 @@ public class Main{
 
         String str = sc.next();
         int n = sc.nextInt();
-        // System.out.println("n: "+n);
+
         int len = str.length();
-        // System.out.println("len: "+len);
-        int answerlen = (len-n > 0) ? len-n : len;
-        // System.out.println(answerlen);
-        
-        for(int i=len-1; i>=answerlen; i--){
+        int endIdx = (n >= len) ? 0 : len-n;
+
+        for(int i=len-1; i>=endIdx; i--){
             System.out.print(str.charAt(i));
         }
     }
