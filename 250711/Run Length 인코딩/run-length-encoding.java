@@ -7,8 +7,8 @@ public class Main{
         String str = sc.next();
 
         int len = str.length();
-        char[] strarr = new char[26];
-        int[] cntarr = new int[26];
+        char[] strarr = new char[100];
+        int[] cntarr = new int[100];
 
         strarr[0] = str.charAt(0);
         char c = strarr[0];
