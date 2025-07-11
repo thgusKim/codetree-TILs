@@ -9,7 +9,7 @@ public class Main{
         // System.out.println("n: "+n);
         int len = str.length();
         // System.out.println("len: "+len);
-        int answerlen = (len-n > 0) ? len-n : n;
+        int answerlen = (len-n > 0) ? len-n : len;
         // System.out.println(answerlen);
         
         for(int i=len-1; i>=answerlen; i--){
