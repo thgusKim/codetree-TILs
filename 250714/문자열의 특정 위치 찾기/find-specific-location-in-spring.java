@@ -10,7 +10,7 @@ public class Main{
         int idx = 0;
         boolean b = false;
 
-        for(int i=0; i<len-1; i++){
+        for(int i=0; i<len; i++){
             if(s.charAt(i)==c){
                 idx = i;
                 b = true;
