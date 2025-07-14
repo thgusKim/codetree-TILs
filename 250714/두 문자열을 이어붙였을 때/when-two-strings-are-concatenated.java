@@ -9,6 +9,6 @@ public class Main{
         String ab = a+b;
         String ba = b+a;
 
-        System.out.println((ab == ba) ? "true" : "false");
+        System.out.println((ab.equals(ba)) ? "true" : "false");
     }
 }
