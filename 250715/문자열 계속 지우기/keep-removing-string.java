@@ -13,11 +13,11 @@ public class Main{
         for(int i=0; i<aLen-bLen+1; i++){
 
             if(a.substring(i, i+bLen).equals(b)){
-                if(a.equals(b)){
+                if(aLen == bLen){
                     break;
                 }else{
-                a = a.substring(0,i) + a.substring(i+bLen);
-                i=0;
+                    a = a.substring(0,i) + a.substring(i+bLen);
+                    i=0;
                 }
             }
             aLen = a.length();
