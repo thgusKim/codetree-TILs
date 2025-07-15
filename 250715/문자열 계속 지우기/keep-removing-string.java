@@ -12,7 +12,7 @@ public class Main{
 
         for(int i=0; i<aLen-bLen+1; i++){
 
-            if(a.substring(i, i+bLen).equals(b)){
+            if(a.substring(i, i+bLen).equals(b) && !a.equals(b)){
                 a = a.substring(0,i) + a.substring(i+bLen);
                 i=0;
             }
