@@ -18,6 +18,7 @@ public class Main{
             }
             aLen = a.length();
         }
+        System.out.println(a);
 
     }
 }
