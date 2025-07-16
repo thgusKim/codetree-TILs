@@ -10,6 +10,7 @@ public class Main{
         for(int i=0; i<len; i++){
             if(s.charAt(i) == 'e'){
                 s = s.substring(0,i) + s.substring(i+1);
+                break;
             }
         }
         System.out.println(s);
