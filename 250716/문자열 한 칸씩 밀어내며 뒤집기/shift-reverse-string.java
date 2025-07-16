@@ -19,12 +19,13 @@ public class Main{
                 System.out.println(s);
             }else if(qType == 3){
                 char[] arr = new char[len];
+                String temp = "";
                 for(int j=len-1; j>=0; j--){
                     arr[j] = s.charAt(j);
                     System.out.print(arr[j]);
+                    temp += arr[j];
                 }
-                System.out.println();
-                s = String.valueOf(arr);
+                s = temp;
             }
         }
     }
