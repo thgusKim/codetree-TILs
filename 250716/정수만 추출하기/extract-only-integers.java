@@ -13,14 +13,16 @@ public class Main{
         int answer = 0;
 
         for(int i=0; i<aLen; i++){
-            if(a.charAt(i)<='0' || a.charAt(i)>='9'){
+            if(a.charAt(i)<'0' || a.charAt(i)>'9'){
                 aIdx = i;
+                break;
             }
         }
 
         for(int i=0; i<bLen; i++){
-            if(b.charAt(i)<='0' || b.charAt(i)>='9'){
+            if(b.charAt(i)<'0' || b.charAt(i)>'9'){
                 bIdx = i;
+                break;
             }
         }
 
@@ -29,7 +31,7 @@ public class Main{
 
         answer += Integer.parseInt(a.substring(0,aIdx));
         answer += Integer.parseInt(b.substring(0,bIdx));
-        
+
         System.out.println(answer);
     }
 }
