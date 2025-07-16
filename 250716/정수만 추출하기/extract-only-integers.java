@@ -8,20 +8,28 @@ public class Main{
         String b = sc.next();
         int aLen = a.length();
         int bLen = b.length();
+        int aIdx = 0;
+        int bIdx = 0;
         int answer = 0;
 
         for(int i=0; i<aLen; i++){
             if(a.charAt(i)<='0' || a.charAt(i)>='9'){
-                answer += Integer.parseInt(a.substring(0,i));
+                aIdx = i;
             }
         }
 
         for(int i=0; i<bLen; i++){
             if(b.charAt(i)<='0' || b.charAt(i)>='9'){
-                answer += Integer.parseInt(b.substring(0,i));
+                bIdx = i;
             }
         }
 
+        if(aIdx == 0)   aIdx = aLen;
+        if(bIdx == 0)   bIdx = bLen;
+
+        answer += Integer.parseInt(a.substring(0,aIdx));
+        answer += Integer.parseInt(b.substring(0,bIdx));
+        
         System.out.println(answer);
     }
 }
