@@ -26,6 +26,7 @@ public class Main{
                     temp += arr[j];
                 }
                 s = temp;
+                System.out.println();
             }
         }
     }
