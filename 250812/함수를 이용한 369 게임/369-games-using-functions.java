@@ -2,20 +2,12 @@ import java.util.Scanner;
 
 public class Main{
     public static boolean in369(int n){
-        int temp = 1;
-
-        while(true){
-            if((n%10) == 3 || (n%10) == 6 || (n%10) == 9){
-                return true;
-            }else if(n/temp != 0){
-                if(n/temp==3 || n/temp==6 || n/temp==9){
-                    return true;
-                }
-            }else if(n/temp == 0){
-                return false;
-            }
-            temp *= 10;
+        while (n > 0) {
+            int d = n % 10;
+            if (d == 3 || d == 6 || d == 9) return true;
+            n /= 10;
         }
+        return false;
     }
 
     public static boolean isMagicNum(int n){
