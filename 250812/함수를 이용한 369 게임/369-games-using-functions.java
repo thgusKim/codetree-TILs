@@ -5,7 +5,7 @@ public class Main{
         int temp = 1;
 
         while(true){
-            if((n%10)%3 == 0){
+            if((n%10) == 3 || (n%10) == 6 || (n%10) == 9){
                 return true;
             }else if(n/temp != 0 && (n/temp)%3 == 0){
                 return true;
