@@ -7,8 +7,10 @@ public class Main{
         while(true){
             if((n%10) == 3 || (n%10) == 6 || (n%10) == 9){
                 return true;
-            }else if(n/temp != 0 && (n/temp)%3 == 0){
-                return true;
+            }else if(n/temp != 0){
+                if(n/temp==3 || n/temp==6 || n/temp==9){
+                    return true;
+                }
             }else if(n/temp == 0){
                 return false;
             }
